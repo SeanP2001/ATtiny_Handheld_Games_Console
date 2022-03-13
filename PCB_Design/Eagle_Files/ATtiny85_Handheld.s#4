@@ -842,25 +842,25 @@ Source: &lt;a href="https://www.arrow.com/en/products/com-09609/sparkfun-electro
 </class>
 </classes>
 <parts>
-<part name="VR1" library="PTV09A-4220F-B103" deviceset="PTV09A-4220F-B103" device=""/>
+<part name="VOLUME_WHEEL" library="PTV09A-4220F-B103" deviceset="PTV09A-4220F-B103" device=""/>
 <part name="ATTINY85" library="ic-package" library_urn="urn:adsk.eagle:library:239" deviceset="DIL8" device="" package3d_urn="urn:adsk.eagle:package:29519/2"/>
-<part name="SG1" library="buzzer" library_urn="urn:adsk.eagle:library:113" deviceset="F/QMX" device="" package3d_urn="urn:adsk.eagle:package:5278/1"/>
+<part name="5V_BUZZER" library="buzzer" library_urn="urn:adsk.eagle:library:113" deviceset="F/QMX" device="" package3d_urn="urn:adsk.eagle:package:5278/1"/>
 <part name="U$1" library="tft_1_8_1_44_oled_0_96" deviceset="OLED_0.96_I2C" device=""/>
-<part name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
-<part name="S2" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
-<part name="S3" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
-<part name="S4" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
-<part name="S5" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
-<part name="S6" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
-<part name="J1" library="COM-09609" deviceset="COM-09609" device=""/>
-<part name="G1" library="battery" library_urn="urn:adsk.eagle:library:109" deviceset="B2430UNI" device="" package3d_urn="urn:adsk.eagle:package:4603/1"/>
+<part name="UP" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
+<part name="DOWN" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
+<part name="LEFT" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
+<part name="RIGHT" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
+<part name="A" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
+<part name="B" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
+<part name="ON/OFF_SWITCH" library="COM-09609" deviceset="COM-09609" device=""/>
+<part name="CR2032" library="battery" library_urn="urn:adsk.eagle:library:109" deviceset="B2430UNI" device="" package3d_urn="urn:adsk.eagle:package:4603/1"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="VR1" gate="G$1" x="45.72" y="73.66" smashed="yes">
+<instance part="VOLUME_WHEEL" gate="G$1" x="45.72" y="73.66" smashed="yes">
 <attribute name="NAME" x="69.85" y="81.28" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="69.85" y="78.74" size="1.778" layer="96" align="center-left"/>
 </instance>
@@ -868,7 +868,7 @@ Source: &lt;a href="https://www.arrow.com/en/products/com-09609/sparkfun-electro
 <attribute name="NAME" x="13.335" y="95.885" size="1.778" layer="95"/>
 <attribute name="VALUE" x="13.335" y="82.55" size="1.778" layer="96"/>
 </instance>
-<instance part="SG1" gate="G$1" x="10.16" y="55.88" smashed="yes">
+<instance part="5V_BUZZER" gate="G$1" x="10.16" y="55.88" smashed="yes">
 <attribute name="NAME" x="7.62" y="62.23" size="1.778" layer="95"/>
 <attribute name="VALUE" x="16.51" y="55.88" size="1.778" layer="96"/>
 </instance>
@@ -876,35 +876,35 @@ Source: &lt;a href="https://www.arrow.com/en/products/com-09609/sparkfun-electro
 <attribute name="NAME" x="98.552" y="76.708" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="98.552" y="84.328" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="S1" gate="1" x="60.96" y="38.1" smashed="yes">
+<instance part="UP" gate="1" x="60.96" y="38.1" smashed="yes">
 <attribute name="NAME" x="54.61" y="35.56" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="57.15" y="41.275" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S2" gate="1" x="76.2" y="38.1" smashed="yes">
+<instance part="DOWN" gate="1" x="76.2" y="38.1" smashed="yes">
 <attribute name="NAME" x="69.85" y="35.56" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="72.39" y="41.275" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S3" gate="1" x="91.44" y="38.1" smashed="yes">
+<instance part="LEFT" gate="1" x="91.44" y="38.1" smashed="yes">
 <attribute name="NAME" x="85.09" y="35.56" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="87.63" y="41.275" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S4" gate="1" x="106.68" y="38.1" smashed="yes">
+<instance part="RIGHT" gate="1" x="106.68" y="38.1" smashed="yes">
 <attribute name="NAME" x="100.33" y="35.56" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="102.87" y="41.275" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S5" gate="1" x="121.92" y="38.1" smashed="yes">
+<instance part="A" gate="1" x="121.92" y="38.1" smashed="yes">
 <attribute name="NAME" x="115.57" y="35.56" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="118.11" y="41.275" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S6" gate="1" x="137.16" y="38.1" smashed="yes">
+<instance part="B" gate="1" x="137.16" y="38.1" smashed="yes">
 <attribute name="NAME" x="130.81" y="35.56" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="133.35" y="41.275" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="J1" gate="G$1" x="12.7" y="73.66" smashed="yes">
+<instance part="ON/OFF_SWITCH" gate="G$1" x="12.7" y="73.66" smashed="yes">
 <attribute name="NAME" x="29.21" y="81.28" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="29.21" y="78.74" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="G1" gate="G$1" x="10.16" y="38.1" smashed="yes">
+<instance part="CR2032" gate="G$1" x="10.16" y="38.1" smashed="yes">
 <attribute name="NAME" x="9.525" y="41.275" size="1.778" layer="95"/>
 <attribute name="VALUE" x="7.62" y="33.02" size="1.778" layer="96"/>
 </instance>
