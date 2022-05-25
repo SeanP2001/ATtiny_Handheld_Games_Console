@@ -97,6 +97,7 @@ This repostitory includes code to test that the buttons and display are working 
 This is where you can find all of the games made for the console.
 
 - [Astro Barrier](https://github.com/SeanP2001/ATtiny_Astro_Barrier)
+- [Snake](https://github.com/SeanP2001/ATtiny_Snake)
 
 ## Further Work
 
