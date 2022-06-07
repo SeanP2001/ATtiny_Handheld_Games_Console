@@ -217,25 +217,11 @@
                     "filename_format": "%PREFIX/silkscreen_bottom.gbr",
                     "layers": [
                         22,
-                        26
+                        26,
+                        28
                     ],
                     "milling": false,
                     "name": "Silkscreen Bottom",
-                    "polarity": "positive",
-                    "type": "gerber_layer"
-                },
-                {
-                    "board_outline": false,
-                    "config": {
-                        "description": "Vias",
-                        "file_function": "Other"
-                    },
-                    "filename_format": "%PREFIX/%FF.gbr",
-                    "layers": [
-                        18
-                    ],
-                    "milling": false,
-                    "name": "Vias",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 }
