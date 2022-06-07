@@ -148,7 +148,7 @@
 <wire x1="86.34" y1="63.17" x2="0" y2="63.17" width="0" layer="20"/>
 <wire x1="0" y1="63.17" x2="0" y2="-1.27" width="0" layer="20"/>
 <text x="50.8" y="3.81" size="1.27" layer="25">ATtiny Handheld
-V1.0
+V1.1
 Sean Price</text>
 <text x="33.02" y="52.07" size="1.778" layer="21">DISPLAY PINOUT</text>
 <text x="34.29" y="49.53" size="1.778" layer="21">Vcc/GND/SCL/SDA</text>
@@ -215,59 +215,6 @@ Sean Price</text>
 <description>Dual In Line Package</description>
 <packageinstances>
 <packageinstance name="DIL08"/>
-</packageinstances>
-</package3d>
-</packages3d>
-</library>
-<library name="battery" urn="urn:adsk.eagle:library:109">
-<description>&lt;b&gt;Lithium Batteries and NC Accus&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="B2430UNI" urn="urn:adsk.eagle:footprint:4553/1" library_version="3">
-<description>&lt;b&gt;LI BATTERY&lt;/b&gt; with different Grids</description>
-<wire x1="-0.635" y1="9.144" x2="0.635" y2="9.144" width="0.254" layer="21"/>
-<wire x1="0" y1="9.779" x2="0" y2="8.509" width="0.254" layer="21"/>
-<wire x1="1.524" y1="-6.985" x2="2.794" y2="-6.985" width="0.254" layer="21"/>
-<wire x1="-2.286" y1="14.859" x2="-5.334" y2="14.859" width="0.1524" layer="51"/>
-<wire x1="-6.604" y1="14.859" x2="-6.604" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="6.604" y1="-1.905" x2="6.604" y2="14.859" width="0.1524" layer="21"/>
-<wire x1="-6.604" y1="-1.905" x2="6.604" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="2.286" y1="14.859" x2="-2.286" y2="14.859" width="0.1524" layer="21"/>
-<wire x1="5.207" y1="14.859" x2="2.286" y2="14.859" width="0.1524" layer="51"/>
-<wire x1="-11.557" y1="0" x2="11.557" y2="0" width="0.1524" layer="21" curve="180"/>
-<wire x1="6.5644" y1="9.5117" x2="11.5571" y2="0" width="0.1524" layer="21" curve="-55.388597"/>
-<wire x1="-11.557" y1="0" x2="-6.6543" y2="9.4491" width="0.1524" layer="21" curve="-54.845911"/>
-<wire x1="-6.604" y1="14.859" x2="-5.334" y2="14.859" width="0.1524" layer="21"/>
-<wire x1="6.604" y1="14.859" x2="5.207" y2="14.859" width="0.1524" layer="21"/>
-<wire x1="-2.159" y1="12.319" x2="-3.556" y2="12.319" width="0.1524" layer="21"/>
-<wire x1="6.604" y1="12.319" x2="3.556" y2="12.319" width="0.1524" layer="51"/>
-<wire x1="-3.556" y1="12.319" x2="-6.604" y2="12.319" width="0.1524" layer="51"/>
-<wire x1="-11.938" y1="0" x2="11.938" y2="0" width="0.1524" layer="21" curve="180"/>
-<wire x1="-11.938" y1="0" x2="-6.622" y2="9.933" width="0.1524" layer="21" curve="-56.309882"/>
-<wire x1="6.5882" y1="9.9555" x2="11.938" y2="0" width="0.1524" layer="21" curve="-56.504865"/>
-<wire x1="3.556" y1="12.319" x2="2.159" y2="12.319" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="12.319" x2="-2.159" y2="12.319" width="0.1524" layer="51"/>
-<pad name="+@1" x="-3.81" y="14.605" drill="1.1176" diameter="2.54" shape="octagon"/>
-<pad name="+" x="3.81" y="14.605" drill="1.1176" diameter="2.54" shape="octagon"/>
-<pad name="-" x="0" y="-5.715" drill="1.1176" diameter="2.54" shape="octagon"/>
-<pad name="+@3" x="5.08" y="12.065" drill="1.1176" diameter="2.54" shape="octagon"/>
-<pad name="+@2" x="-5.08" y="12.065" drill="1.1176" diameter="2.54" shape="octagon"/>
-<pad name="-@1" x="0" y="-8.255" drill="1.1176" diameter="2.54" shape="octagon"/>
-<pad name="+@4" x="0" y="12.065" drill="1.8034" diameter="3.81" shape="octagon"/>
-<text x="-5.08" y="16.256" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="8.89" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<text x="-2.921" y="5.08" size="1.27" layer="21" ratio="10">Lit.3V</text>
-<text x="-5.08" y="0.635" size="1.27" layer="21" ratio="10">10,2x17,8</text>
-<text x="-5.08" y="-3.81" size="1.27" layer="21" ratio="10">10,2x20,3</text>
-<text x="-4.064" y="-1.27" size="1.27" layer="21" ratio="10">7,5x20,3</text>
-<text x="-1.778" y="2.54" size="1.27" layer="21" ratio="10">0x20,3</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="B2430UNI" urn="urn:adsk.eagle:package:4603/1" type="box" library_version="3">
-<description>LI BATTERY with different Grids</description>
-<packageinstances>
-<packageinstance name="B2430UNI"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -521,6 +468,44 @@ chip 0805</description>
 </package>
 </packages>
 </library>
+<library name="CR2032_Battery_Holder">
+<packages>
+<package name="CR2032_BATTERY_HOLDER">
+<description>&lt;b&gt;LI BATTERY&lt;/b&gt; with different Grids</description>
+<wire x1="-0.635" y1="9.144" x2="0.635" y2="9.144" width="0.254" layer="21"/>
+<wire x1="0" y1="9.779" x2="0" y2="8.509" width="0.254" layer="21"/>
+<wire x1="1.524" y1="-6.985" x2="2.794" y2="-6.985" width="0.254" layer="21"/>
+<wire x1="-2.286" y1="14.859" x2="-5.334" y2="14.859" width="0.1524" layer="51"/>
+<wire x1="-6.604" y1="14.859" x2="-6.604" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="6.604" y1="-1.905" x2="6.604" y2="14.859" width="0.1524" layer="21"/>
+<wire x1="-6.604" y1="-1.905" x2="6.604" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.286" y1="14.859" x2="-2.286" y2="14.859" width="0.1524" layer="21"/>
+<wire x1="5.207" y1="14.859" x2="2.286" y2="14.859" width="0.1524" layer="51"/>
+<wire x1="-11.557" y1="0" x2="11.557" y2="0" width="0.1524" layer="21" curve="180"/>
+<wire x1="6.5644" y1="9.5117" x2="11.5571" y2="0" width="0.1524" layer="21" curve="-55.388597"/>
+<wire x1="-11.557" y1="0" x2="-6.6543" y2="9.4491" width="0.1524" layer="21" curve="-54.845911"/>
+<wire x1="-6.604" y1="14.859" x2="-5.334" y2="14.859" width="0.1524" layer="21"/>
+<wire x1="6.604" y1="14.859" x2="5.207" y2="14.859" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="12.319" x2="-3.556" y2="12.319" width="0.1524" layer="21"/>
+<wire x1="6.604" y1="12.319" x2="3.556" y2="12.319" width="0.1524" layer="51"/>
+<wire x1="-3.556" y1="12.319" x2="-6.604" y2="12.319" width="0.1524" layer="51"/>
+<wire x1="-11.938" y1="0" x2="11.938" y2="0" width="0.1524" layer="21" curve="180"/>
+<wire x1="-11.938" y1="0" x2="-6.622" y2="9.933" width="0.1524" layer="21" curve="-56.309882"/>
+<wire x1="6.5882" y1="9.9555" x2="11.938" y2="0" width="0.1524" layer="21" curve="-56.504865"/>
+<wire x1="3.556" y1="12.319" x2="2.159" y2="12.319" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="12.319" x2="-2.159" y2="12.319" width="0.1524" layer="51"/>
+<pad name="-@1" x="0" y="-8.255" drill="1.1176" diameter="2.54" shape="octagon"/>
+<pad name="+@4" x="0" y="12.065" drill="1.8034" diameter="3.81" shape="octagon"/>
+<text x="-5.08" y="16.256" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="8.89" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-2.921" y="5.08" size="1.27" layer="21" ratio="10">Lit.3V</text>
+<text x="-5.08" y="0.635" size="1.27" layer="21" ratio="10">10,2x17,8</text>
+<text x="-5.08" y="-3.81" size="1.27" layer="21" ratio="10">10,2x20,3</text>
+<text x="-4.064" y="-1.27" size="1.27" layer="21" ratio="10">7,5x20,3</text>
+<text x="-1.778" y="2.54" size="1.27" layer="21" ratio="10">0x20,3</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -734,10 +719,8 @@ design rules under a new name.</description>
 <element name="B" library="Tactile_&amp;_SIlicone_Button" package="TACTILE/SILICONE_BUTTON" override_package3d_urn="urn:adsk.eagle:package:34566251/2" override_package_urn="urn:adsk.eagle:footprint:27476/1" override_locally_modified="yes" value="TACTILE/SILICONE_BUTTON" x="59.69" y="13.97" smashed="yes">
 <attribute name="NAME" x="54.102" y="13.843" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="CR2032" library="battery" library_urn="urn:adsk.eagle:library:109" package="B2430UNI" package3d_urn="urn:adsk.eagle:package:4603/1" override_package3d_urn="urn:adsk.eagle:package:34566283/2" override_package_urn="urn:adsk.eagle:footprint:4553/1" value="B2430UNI" x="13.97" y="44.45" smashed="yes">
+<element name="CR2032" library="CR2032_Battery_Holder" package="CR2032_BATTERY_HOLDER" override_package3d_urn="urn:adsk.eagle:package:34566283/2" override_package_urn="urn:adsk.eagle:footprint:4553/1" override_locally_modified="yes" value="CR2032_BATTERY_HOLDER" x="13.97" y="44.45" smashed="yes">
 <attribute name="NAME" x="8.89" y="60.706" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="3" x="39.37" y="31.75" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="22.86" y="41.91" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="DOWN" library="Tactile_&amp;_SIlicone_Button" package="TACTILE/SILICONE_BUTTON" override_package3d_urn="urn:adsk.eagle:package:34566238/2" override_package_urn="urn:adsk.eagle:footprint:27476/1" override_locally_modified="yes" value="TACTILE/SILICONE_BUTTON" x="19.05" y="7.62" smashed="yes" rot="R90">
 <attribute name="NAME" x="22.098" y="2.667" size="1.27" layer="25" ratio="10" rot="R180"/>
@@ -854,14 +837,14 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="N$1">
-<contactref element="CR2032" pad="+"/>
 <contactref element="ON/OFF_SWITCH" pad="2"/>
 <wire x1="64.48" y1="60.96" x2="64.48" y2="59.4" width="1.27" layer="1"/>
 <wire x1="64.48" y1="59.4" x2="63.5" y2="58.42" width="1.27" layer="1"/>
 <wire x1="63.5" y1="58.42" x2="58.42" y2="58.42" width="1.27" layer="1"/>
 <wire x1="58.42" y1="58.42" x2="55.321" y2="61.519" width="1.27" layer="1"/>
-<wire x1="17.78" y1="59.055" x2="20.244" y2="61.519" width="1.27" layer="1"/>
-<wire x1="20.244" y1="61.519" x2="55.321" y2="61.519" width="1.27" layer="1"/>
+<contactref element="CR2032" pad="+@4"/>
+<wire x1="18.974" y1="61.519" x2="13.97" y2="56.515" width="1.27" layer="1"/>
+<wire x1="55.321" y1="61.519" x2="18.974" y2="61.519" width="1.27" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="R4" pad="1"/>
@@ -888,9 +871,9 @@ design rules under a new name.</description>
 <contactref element="DOWN" pad="3"/>
 <wire x1="21.3106" y1="10.8712" x2="21.3106" y2="4.3688" width="1.27" layer="16"/>
 <wire x1="21.3106" y1="4.3688" x2="24.4094" y2="1.27" width="1.27" layer="1"/>
-<wire x1="64.77" y1="1.27" x2="66.04" y2="2.54" width="1.27" layer="1"/>
+<wire x1="66.04" y1="2.54" x2="64.77" y2="1.27" width="1.27" layer="1"/>
 <wire x1="24.4094" y1="1.27" x2="64.77" y2="1.27" width="1.27" layer="1"/>
-<wire x1="66.04" y1="2.54" x2="66.03" y2="2.54" width="0" layer="19" extent="1-1"/>
+<wire x1="66.03" y1="2.54" x2="66.04" y2="2.54" width="1.27" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="R1" pad="1"/>
@@ -906,7 +889,6 @@ design rules under a new name.</description>
 <contactref element="DOWN" pad="2"/>
 <contactref element="LEFT" pad="2"/>
 <contactref element="RIGHT" pad="2"/>
-<wire x1="81.1784" y1="36.7792" x2="81.29" y2="36.83" width="0.1524" layer="16"/>
 <contactref element="ATTINY85" pad="3"/>
 <contactref element="UP" pad="1"/>
 <contactref element="DOWN" pad="1"/>
@@ -1003,7 +985,6 @@ design rules under a new name.</description>
 <wire x1="52.1208" y1="22.9108" x2="52.08" y2="22.86" width="0.1524" layer="16"/>
 <contactref element="R5" pad="2"/>
 <contactref element="R6" pad="2"/>
-<contactref element="CR2032" pad="+@2"/>
 <contactref element="ON/OFF_SWITCH" pad="1"/>
 <contactref element="JMP1" pad="1"/>
 <contactref element="JMP2" pad="3"/>
@@ -1044,19 +1025,9 @@ design rules under a new name.</description>
 <wire x1="66.48" y1="59.25" x2="67.31" y2="58.42" width="1.27" layer="1"/>
 <wire x1="46.99" y1="11.43" x2="48.26" y2="11.43" width="1.27" layer="16"/>
 <wire x1="81.29" y1="5.08" x2="83.83" y2="2.54" width="1.27" layer="16"/>
-<wire x1="48.26" y1="11.43" x2="54.61" y2="5.08" width="1.27" layer="16"/>
+<wire x1="48.26" y1="11.43" x2="48.895" y2="10.795" width="1.27" layer="16"/>
+<wire x1="48.895" y1="10.795" x2="54.61" y2="5.08" width="1.27" layer="16"/>
 <wire x1="54.61" y1="5.08" x2="81.29" y2="5.08" width="1.27" layer="16"/>
-<wire x1="3.81" y1="35.57" x2="8.89" y2="56.515" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$17">
-<wire x1="13.97" y1="57.15" x2="13.97" y2="58.42" width="0.1524" layer="1"/>
-<wire x1="13.97" y1="58.42" x2="15.24" y2="59.69" width="0.1524" layer="1"/>
-<wire x1="15.24" y1="59.69" x2="17.78" y2="59.69" width="0.1524" layer="1"/>
-</signal>
-<signal name="N$18">
-<wire x1="13.97" y1="57.15" x2="13.97" y2="58.42" width="0.1524" layer="16"/>
-<wire x1="13.97" y1="58.42" x2="15.24" y2="59.69" width="0.1524" layer="16"/>
-<wire x1="15.24" y1="59.69" x2="17.78" y2="59.69" width="0.1524" layer="16"/>
 </signal>
 <signal name="SCL">
 <contactref element="ATTINY85" pad="7"/>
@@ -1085,16 +1056,13 @@ design rules under a new name.</description>
 <wire x1="43.18" y1="48.26" x2="46.63" y2="51.71" width="1.27" layer="16"/>
 </signal>
 <signal name="GND">
-<contactref element="CR2032" pad="-"/>
 <contactref element="R7" pad="1"/>
 <contactref element="R8" pad="1"/>
 <contactref element="ATTINY85" pad="4"/>
-<wire x1="39.4716" y1="3.7084" x2="39.37" y2="3.81" width="0.1524" layer="16"/>
 <contactref element="5V_BUZZER" pad="-"/>
 <contactref element="VOLUME_WHEEL" pad="3"/>
 <contactref element="JMP1" pad="3"/>
 <contactref element="JMP2" pad="1"/>
-<wire x1="13.97" y1="38.735" x2="13.97" y2="45.72" width="1.27" layer="1"/>
 <wire x1="16.08" y1="47.83" x2="30.48" y2="47.83" width="1.27" layer="1"/>
 <wire x1="13.97" y1="45.72" x2="16.08" y2="47.83" width="1.27" layer="1"/>
 <via x="33.02" y="53.34" extent="1-16" drill="0.35"/>
@@ -1105,6 +1073,8 @@ design rules under a new name.</description>
 <vertex x="86.36" y="-1.27"/>
 <vertex x="0" y="-1.27"/>
 </polygon>
+<contactref element="CR2032" pad="-@1"/>
+<wire x1="13.97" y1="36.195" x2="13.97" y2="45.72" width="1.27" layer="1"/>
 </signal>
 <signal name="DISP_1">
 <contactref element="U$1" pad="VCC"/>
@@ -1132,20 +1102,6 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="19,1,b4e8917c346baf05"/>
-<approved hash="19,16,b4e8917c346baf05"/>
-<approved hash="23,1,ef0b4b7b4b14ef64"/>
-<approved hash="23,1,38bf5ecf5f1f396f"/>
-<approved hash="19,1,3da053e79e595e0f"/>
-<approved hash="19,1,8a5d56c4a75ffddd"/>
-<approved hash="19,1,f5302860629caae6"/>
-<approved hash="19,16,f5302860629caae6"/>
-<approved hash="19,16,8a5d56c4a75ffddd"/>
-<approved hash="19,16,3da053e79e595e0f"/>
-<approved hash="23,16,ef0b4b7b4b14ef64"/>
-<approved hash="23,16,38bf5ecf5f1f396f"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
