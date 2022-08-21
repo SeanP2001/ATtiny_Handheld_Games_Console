@@ -3,33 +3,24 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Board Manager & Programming Setup](#board-manager---programming-setup)
 - [Circuitry](#circuitry)
   * [Schematic](#schematic)
   * [PCB Design](#pcb-design)
+    + [Button Footprints](#button-footprints)
+    + [Display Pinout Jumpers](#display-pinout-jumpers)
   * [Soldered PCB](#soldered-pcb)
+- [Board Manager & Programming Setup](#board-manager---programming-setup)
 - [Code](#code)
 - [Enclosure](#enclosure)
   * [CAD Enclosure](#cad-enclosure)
   * [3D Printed Enclosure](#3d-printed-enclosure)
 - [Game Library](#game-library)
 - [Further Work](#further-work)
-  * [PCB Changes](#pcb-changes)
   * [Version 2 - Featuring the Pico](#version-2---featuring-the-pico)
 
 ## Introduction
 
 My aim is to create a handheld games console, based on the ATtiny85 AVR microcontroller. Users will be able to program their own games and play them anywhere. The long-term goal for this project is to create a library of games, and it would be amazing to build a community of users who can upload their games for others to download and play.
-
-## Board Manager & Programming Setup
-
-I am using the ATTinyCore board manager (https://github.com/SpenceKonde/ATTinyCore) with the following settings:
-
-<p align="center">
- <img src="./Images/BoardSettings.png" width="450" />
-</p>
-
-Currently I am programming the ATtiny using an Arduino Uno as a programmer. You could either do this or use a dedicated ISP programmer.
 
 ## Circuitry
 
@@ -45,11 +36,31 @@ Currently I am programming the ATtiny using an Arduino Uno as a programmer. You 
 | ------------------------------------------------ | ----------------------------------------------------- |
 | <img src="./Images/PCB.jpg" />                   | <img src="./Images/PCB_Back.jpg" />                   |
 
+#### Button Footprints
+
+I designed the button footprint to give the option of using either tactile buttons or silicone button membranes. However, after experimenting I have found that silicone buttons will never work with this design. The analog value recieved by the microcontroller varies wildly depending on the pressure applied to the button. This makes silicone buttons unusable. **Please use tactile buttons when assembling the PCB**. In the next PCB revision, I intend to remove the contact pads and return to a regular tactile button footprint.
+
+#### Display Pinout Jumpers
+
+Another feature of the PCB is the jumper connections under the display. The I2C OLED displays do not all have the same pin layout. When you buy a display online, the item you recieve may not have the same pinout as the one in the photos. Due to this inconsistency I have designed the board to work with both pinouts. If your display has the pinout (in order) Vcc/GND/SCL/SDA then you need to use solder to bridge the middle pads to the upper pads (shown blue below). If it is GND/Vcc/SCL/SDA then you need to bridge the middle pads to the lower pads (shown red below). Once you have done this, use Kapton tape to insulate the solder bridges and prevent them from causing a short circuit on the back of the display.
+
+<p align="center">
+ <img src="./Images/Display_Jumpers.jpg"/>
+</p>
+
 ### Soldered PCB
 
 <p align="center">
  <img src="./Images/Soldered_PCB.jpg"/>
 </p>
+
+## Board Manager & Programming Setup
+
+I am using the ATTinyCore board manager ([GitHub - SpenceKonde/ATTinyCore: Arduino core for ATtiny 1634, 828, x313, x4, x41, x5, x61, x7 and x8](https://github.com/SpenceKonde/ATTinyCore)) with the following settings:
+
+![](./Images/BoardSettings.png)
+
+Currently I am programming the ATtiny using an Arduino Uno as a programmer. You could either do this or use a dedicated ISP programmer.
 
 ## Code
 
@@ -101,21 +112,7 @@ This is where you can find all of the games made for the console.
 
 ## Further Work
 
-### PCB Changes
-
-Next time I order PCBs I would like to make some changes to the design:
-
-- Use wider, hand-routed traces
-
-- Remove the reverse voltage protection diode
-
-- Make the volume wheel pads smaller
-
-- Add mounting holes for screws
-
-- Add a ground plane
-
-- Change to using an angled power switch (standard part)
+Next time I order PCBs I will remove the contact pads and return to a regular tactile button footprint. I will also remove the silicone button membranes and alignment pins from the enclosure design. I may make small alterations to the height of the buttons along with minimising the gaps around the volume wheel and on/off switch.
 
 ### Version 2 - Featuring the Pico
 
